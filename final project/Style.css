@@ -1,0 +1,95 @@
+
+@font-face {
+font-family: myFirstFont;
+src: url(ideal-sans-serif.woff)format("woff");
+text-decoration-color: #F6F0ED;
+}
+
+
+body{
+  margin; 0px;
+}
+
+p{
+  text-decoration-color: #F6F0ED;
+}
+h1{
+  text-decoration-color: #F6F0ED;
+}
+
+.gallery{
+     grid-area: myArea3;
+     width: 300px;
+    background-color: #7EA8BE;
+
+
+}
+.item1{
+  grid-area: myArea2;
+  background-color: #28536B;
+color: #C2948A;
+
+
+}
+
+
+
+  .sticky {
+  position: -webkit-sticky; 
+  grid-area: myArea1;
+  background-color: #BBB193;
+  color: ivory;
+
+}
+    
+
+
+}
+.grid-container{
+  z-index:0;
+  display: flex;
+  height: 1000px;
+  align-items: stretch;
+    grid-row-gap: 0px;
+
+
+  grid-template:
+
+  'myArea1 myArea1 myArea1 myArea1 '
+  'myArea2 myArea2 myArea2 myArea3 '
+  'myArea2 myArea2 myArea2 myArea3 '
+ 'myArea2 myArea2 myArea2 myArea3 '
+  'myArea2 myArea2 myArea2 myArea3 '  
+ 'myArea2  myArea2 myArea2 myArea3 '
+ 'myArea2  myArea2 myArea2 myArea3 '
+
+  ;
+}
+
+make this one column
+@media only screen and (max-width: 750px) {
+  .gallery{
+     grid-area: myArea8;
+     width: 150px;
+
+}
+.grid-container{
+  z-index:0;
+  display: grid;
+  grid-template:
+
+  'myArea1  myArea1 '
+  'myArea2 myArea2  '
+  'myArea2 myArea2  '
+  'myArea2 myArea2 '  
+ 'myArea3  myArea3 '
+ 'myArea3    myArea3 '
+
+  ;
+}
+
+  }
+
+
+
+
